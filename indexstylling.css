@@ -144,6 +144,9 @@ body{
     margin-bottom: 4rem;
     font-size: 3rem;
 }
+#contri-result{
+    font-weight: 700;
+}
 #button {
     align-self: flex-end;
     width: 95%;
