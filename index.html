@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="indexstylling.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="header">
+    spliter
+  </div>
+  <div class="main">
+    <div id="lefthalf">
+      <label for="Bill" style="color: rgb(128, 122, 122);">Bill</label>
+      <div id="input-box">
+        <img src="images/rupee-sign-solid.svg" alt="" id="dollor-icon">
+        <input type="number" placeholder="0.00" id="bill-input">
+      </div>
+      <div id="select-tip-heading" style="color: rgb(124, 119, 119);">Select Tip %</div>
+      <div id="select-tip-section">
+        <span>5%</span>
+        <span>10%</span>
+        <span>15%</span>
+        <span>25%</span>
+        <span>50%</span>
+        <input type="number" name="" id="" placeholder="Custom">
+      </div>
+      <div id="number-of-people" style="color: rgb(119, 114, 114);"><span>Number of people</span><span id="warning">lerrf</span></div>
+      <div id="input-box-2">
+        <img src="images/icon-person.svg" alt="" id="person-icon">
+        <input type="number" placeholder="0">
+      </div>
+    </div>
+    <div id="righthalf">
+      <div id="tip-result-box">
+        <div id="tip-amount-heading-box">
+          <span style="color: white;">Tip Amount</span>
+          <span>/ person</span>
+        </div>
+        <div id="tip-result">₹0.00</div>
+      </div>      
+      <div id="contri-result-box">
+        <div id="contri-amount-heading-box">
+          <span style="color: white;">Total</span>
+          <span>/ person</span>
+        </div>
+        <div id="tip-result">₹0.00</div>
+      </div>
+      <div id="button">
+        <button>RESET</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./indexscript.js"></script>
+</html>
