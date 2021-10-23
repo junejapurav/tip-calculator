@@ -71,9 +71,9 @@ body{
     border-radius: 6px;
     padding: 1px;
 }
-#input-box img{
+#input-box span{
     width: 10%;
-    height: 1.2rem;
+    height: 1rem;
     padding: 0.3rem 0 0.3rem 0.2rem;
     color: gray;
 }
@@ -113,11 +113,11 @@ body{
     background-color: hsl(189, 41%, 97%);
     padding: 0.3rem 0 0.3rem 0;    
 }
-#input-box-2 img{
+#input-box-2 span{
     width: 5%;
     height: 60%;
     padding: 0.3rem 0 0.3rem 0.2rem;
-    color: black;
+    color: gray;
 }
 #righthalf{
     display: flex;
