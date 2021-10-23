@@ -1,7 +1,7 @@
 /* document.addEventListener("DOMContentLoaded", function(event) { 
     //Do work
 }); */
-var totalbill;
+var totalbill = 0;
 var billratio = 0;
 var noOfPeople;
 var tipPerPerson;
@@ -85,9 +85,17 @@ document.querySelector("#input-box-2 input").addEventListener("input",function(e
 });
 
 
-document.getElementById("button").onclick() = function(){
+document.getElementById("button").onclick = function(){
+    console.log("clicked");
     for(var b=0;b<billRatioButton.length;b++){
         billRatioButton[b].style.backgroundColor = "hsl(183, 100%, 15%)";
         billRatioButton[b].style.color = "hsl(0, 0%, 100%)";              
     }
+    document.querySelector("#input-box-2").style.border = "none";
+    document.querySelector("#input-box").style.border = "none";
+    document.querySelector("#select-tip-section input").value = "";
+    document.getElementById("bill-input").value = "";
+    document.querySelector("#input-box-2 input").value = "";
+    totalbill = 0;
+    billratio = 0;
 }

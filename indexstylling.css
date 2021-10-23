@@ -5,14 +5,26 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
-    padding: 8rem;
+    gap: 4rem;
+    padding: 6rem;
     background-color: hsl(185, 41%, 84%);
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-weight: 600;
+    font-size: large;
+    font-family: unset;
+    color: hsl(183, 100%, 15%);
+}
+.header span{
+    letter-spacing: 1.1rem;
 }
 .main{
     display: flex;
     flex-direction: row;
-    width: 50rem;
+    width: 60vw;
     gap: 5rem;
     padding: 2rem;
     background-color: white;
@@ -105,6 +117,7 @@ body{
     width: 5%;
     height: 60%;
     padding: 0.3rem 0 0.3rem 0.2rem;
+    color: black;
 }
 #righthalf{
     display: flex;
@@ -171,4 +184,20 @@ input::-webkit-inner-spin-button {
 }
 #input-box:focus{
     border: solid 2px hsl(172, 67%, 45%);
+}
+@media screen and (max-width: 1040px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    #lefthalf{
+        width: 90%;
+        align-self: center;
+    }
+    #button button{
+        height: 3rem;
+    }
+    #tip-result-box,#contri-result-box{
+        font-size: 8vw;
+    }
 }
